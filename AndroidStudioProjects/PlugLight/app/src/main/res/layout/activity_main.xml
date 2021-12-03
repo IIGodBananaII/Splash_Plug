@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    tools:context=".MainActivity"
+    android:layout_gravity="top"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="95dp"
+        android:text="Nome"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:fontFamily="@font/baloo"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/brown"
+        android:text="TV"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        android:fontFamily="@font/baloo"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button2"
+        android:layout_width="263dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginLeft="74dp"
+        android:layout_marginTop="212dp"
+        android:background="@drawable/grdver"
+        android:text="Alterar Imagem"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:fontFamily="@font/abeezee"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button3"
+        android:layout_width="263dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginLeft="74dp"
+        android:layout_marginTop="283dp"
+        android:background="@drawable/grdred"
+        android:text="Remover Dispositivo"
+        android:textColor="@color/white"
+        android:fontFamily="@font/abeezee"
+        android:textSize="20dp"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="130dp">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="58dp"
+            android:background="@color/white"
+            android:layout_gravity="center_horizontal"/>
+        <EditText
+            android:layout_width="290dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center_horizontal"
+            android:text="  Televisão"
+            android:textSize="25dp"
+            android:background="@drawable/fundo"
+            android:textColor="@color/white"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/abeezee"/>
+
+    </FrameLayout>
+         <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        app:srcCompat="@drawable/bottom" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:background="@drawable/seta"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    </FrameLayout>
+</FrameLayout>
